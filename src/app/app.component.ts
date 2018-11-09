@@ -24,6 +24,21 @@ export class AppComponent {
       title: '勤怠登録',
       url: '/timeRegistration',
       icon: 'list'
+    },
+    {
+      title: '日報作成',
+      url: '/dailyReport',
+      icon: 'list'
+    },
+    {
+      title: 'DS',
+      url: '/dreamSource',
+      icon: 'list'
+    },
+    {
+      title: '設定',
+      url: '/configuration',
+      icon: 'list'
     }
   ];
 
