@@ -1,9 +1,45 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>dreamSource</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      ドリームソース
+    </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content padding>
+  <!-- START:タブメニュー-->
+  <!-- <div class="tabmenu" #tabmenu ion-fixed>
+    <div class="tabmenu-items" *ngFor="let segment of segments;let idx = index;">
+      <div class="tabmenu-bt">
+        <button [ngClass]="{'active':idx==activeIndex}" ion-button (click)="change(idx)" clear>{{segment.name}}</button>
+      </div>
+    </div>
+  </div> -->
+  <!-- END:タブメニュー-->
+  <!-- START:リスト-->
+  <!-- <ion-slides (ionSlideWillChange)="onSlideChangeStart()" class="tabmenu-slides" #Slides>
+    <ion-slide *ngFor="let segment of segments">
+      <ion-list>
+        <button *ngFor="let item of segment.items" ion-item>{{item}}</button>
+      </ion-list>
+    </ion-slide>
+  </ion-slides> -->
+  <ion-slides pager="true">
 
+    <ion-slide>
+      <h1>Slide 1</h1>
+    </ion-slide>
+
+    <ion-slide>
+      <h1>Slide 2</h1>
+    </ion-slide>
+
+    <ion-slide>
+      <h1>Slide 3</h1>
+    </ion-slide>
+  </ion-slides>
+  <!-- END:リスト-->
 </ion-content>
